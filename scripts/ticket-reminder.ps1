@@ -49,7 +49,7 @@ foreach ($it in $due) {
     $channel = switch ($it.category) { { $_ -in "idol", "stayc" } { "idol" } "pogo" { "pogo" } "pikmin" { "pikmin" } default { "game" } }
     $local = $it.start.ToOffset([TimeSpan]::FromHours(8))
     $mins = [math]::Max(0, [math]::Round(($it.start - $now).TotalMinutes))
-    $desc = "**{0}**`n{1}`n`n⏰ **{2:M/d}（{3}）{2:HH:mm}** 開賣，大約還有 **{4} 分鐘**" -f $it.who, $it.label, $local, $week[[int]$local.DayOfWeek], $mins
+    $desc = "**{0}**`n{1}`n`n⏰ **{2:M/d}（{3}）{2:HH:mm}** 開賣，大約還有 **{4} 分鐘**`n`n☁️ 雲端通知" -f $it.who, $it.label, $local, $week[[int]$local.DayOfWeek], $mins
     $fields = @(@{ name = "場次"; value = (($it.titles | Select-Object -Unique) -join "`n"); inline = $false })
     if ($it.url) { $fields += @{ name = "購票網站"; value = $it.url; inline = $false } }
     $prefix = if ($Test) { "🧪【測試】" } else { "" }
