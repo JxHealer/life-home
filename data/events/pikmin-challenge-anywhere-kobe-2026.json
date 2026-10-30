@@ -1,0 +1,15 @@
+{
+    "title":  "Challenge Anywhere 神戶（全球線上付費活動）",
+    "subject":  "Pikmin Bloom Journey",
+    "category":  "pikmin",
+    "status":  "verified",
+    "tickets":  [
+                    {
+                        "end":  "2026-11-29T21:59:00+08:00",
+                        "label":  "線上門票（US$9.99，不限量）",
+                        "note":  "在 App 內商店購買，每人限一張",
+                        "start":  "2026-09-29T09:00:00+08:00",
+                        "url":  "https://pikminbloom.com/news/sep26-challengeanywhere"
+                    }
+                ]
+}

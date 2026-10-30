@@ -1,0 +1,14 @@
+{
+    "title":  "AKMU 演唱會〔傳言的樂園〕韓國巡迴 江陵場",
+    "subject":  "AKMU",
+    "category":  "idol",
+    "status":  "verified",
+    "tickets":  [
+                    {
+                        "label":  "YES24 一般販售",
+                        "note":  "韓國售票網站，可能已售完；海外購票可試 YES24 Global",
+                        "start":  "2026-09-14T16:00:00+09:00",
+                        "url":  "https://m.ticket.yes24.com/Perf/60017"
+                    }
+                ]
+}
