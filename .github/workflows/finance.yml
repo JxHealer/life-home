@@ -1,0 +1,34 @@
+# 股票日報：平日開盤後、收盤後各發一次 Discord #金融日報
+# 時間是 UTC（台灣時間 -8 小時）。GitHub 的排程常會晚 5–20 分鐘才跑。
+name: 股票日報
+
+on:
+  schedule:
+    - cron: "10 1 * * 1-5"    # 台灣 09:10 開盤後
+    - cron: "40 5 * * 1-5"    # 台灣 13:40 收盤後
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "open = 開盤、close = 收盤"
+        type: choice
+        options: [open, close]
+        default: close
+      test:
+        description: "測試（休市也照樣發送）"
+        type: boolean
+        default: true
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 發送日報
+        shell: pwsh
+        env:
+          DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS }}
+        run: |
+          $mode = if ("${{ github.event_name }}" -eq "workflow_dispatch") { "${{ inputs.mode }}" } elseif ("${{ github.event.schedule }}" -eq "10 1 * * 1-5") { "open" } else { "close" }
+          if ("${{ inputs.test }}" -eq "true") { ./scripts/finance-report.ps1 -Mode $mode -Test } else { ./scripts/finance-report.ps1 -Mode $mode }

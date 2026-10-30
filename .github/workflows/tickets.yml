@@ -1,0 +1,43 @@
+# 開賣提醒：每 10 分鐘檢查一次，售票開始前 1 小時發 Discord
+# GitHub 的排程常會晚 5–20 分鐘才跑；只要還沒開賣就會補發。
+name: 開賣提醒
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "發一則測試通知（下一個開賣項目）"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tickets
+  cancel-in-progress: false
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 檢查開賣時間
+        shell: pwsh
+        env:
+          DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS }}
+        run: |
+          if ("${{ inputs.test }}" -eq "true") { ./scripts/ticket-reminder.ps1 -Test } else { ./scripts/ticket-reminder.ps1 }
+
+      - name: 記錄已通知
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ticket-reminder-state.json 2>/dev/null || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "記錄已發送的開賣提醒"
+          git pull --rebase -q && git push
