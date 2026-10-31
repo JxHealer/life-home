@@ -13,7 +13,8 @@ $Root = Join-Path $PSScriptRoot ".."
 $EventsDir = Join-Path $Root "data/events"
 $StatePath = Join-Path $Root "data/ticket-reminder-state.json"
 
-$LeadMinutes = 60
+# 開賣前 2 小時、1 小時各提醒一次（雲端排程大約 30～60 分鐘才跑一次，所以用區間判斷）
+$Stages = @(@{ mins = 120; prefix = "2h|"; text = "2 小時前" }, @{ mins = 60; prefix = ""; text = "1 小時前" })
 $now = [DateTimeOffset]::UtcNow
 if (-not (Test-Path $EventsDir)) { exit 0 }
 
@@ -37,15 +38,24 @@ foreach ($f in Get-ChildItem $EventsDir -Filter *.json) {
 $sent = @()
 if (Test-Path $StatePath) { $sent = @((Get-Content $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json).sent) }
 
+$due = @()
 if ($Test) {
-    $due = @($items.Values | Where-Object { $_.start -gt $now } | Sort-Object { $_.start } | Select-Object -First 1)
+    $next = $items.Values | Where-Object { $_.start -gt $now } | Sort-Object { $_.start } | Select-Object -First 1
+    if ($next) { $due += @{ item = $next; stage = $Stages[0] } }
 } else {
-    # 開賣前 1 小時內、還沒開賣、還沒通知過（排程晚跑也會補發，只要還沒開賣）
-    $due = @($items.Values | Where-Object { $_.start -gt $now -and $_.start -le $now.AddMinutes($LeadMinutes) -and $_.key -notin $sent })
+    # 每一筆只發「目前所在的那一段」：剩 60～120 分鐘發 2 小時提醒，剩 60 分鐘內發 1 小時提醒
+    # 1 小時提醒的紀錄沿用原本的 key，2 小時提醒在前面加 "2h|"（清理舊紀錄時看的是最後一段的時間）
+    foreach ($it in $items.Values) {
+        $left = ($it.start - $now).TotalMinutes
+        if ($left -le 0) { continue }
+        $stage = if ($left -le 60) { $Stages[1] } elseif ($left -le 120) { $Stages[0] } else { $null }
+        if ($stage -and ($stage.prefix + $it.key) -notin $sent) { $due += @{ item = $it; stage = $stage } }
+    }
 }
 
 $week = "日一二三四五六"
-foreach ($it in $due) {
+foreach ($d in $due) {
+    $it = $d.item
     $channel = switch ($it.category) { { $_ -in "idol", "stayc" } { "idol" } "pogo" { "pogo" } "pikmin" { "pikmin" } default { "game" } }
     $local = $it.start.ToOffset([TimeSpan]::FromHours(8))
     $mins = [math]::Max(0, [math]::Round(($it.start - $now).TotalMinutes))
@@ -53,9 +63,9 @@ foreach ($it in $due) {
     $fields = @(@{ name = "場次"; value = (($it.titles | Select-Object -Unique) -join "`n"); inline = $false })
     if ($it.url) { $fields += @{ name = "購票網站"; value = $it.url; inline = $false } }
     $prefix = if ($Test) { "🧪【測試】" } else { "" }
-    Send-Discord -Channel $channel -Color 0xE5484D -Title "$($prefix)🎫 開賣提醒｜$($it.who)" -Description $desc -Fields $fields
-    if (-not $Test) { $sent += $it.key }
-    Write-Host ("{0}通知 {1}" -f $prefix, $it.key)
+    Send-Discord -Channel $channel -Color 0xE5484D -Title "$($prefix)🎫 開賣提醒（$($d.stage.text)）｜$($it.who)" -Description $desc -Fields $fields
+    if (-not $Test) { $sent += $d.stage.prefix + $it.key }
+    Write-Host ("{0}通知 {1}{2}" -f $prefix, $d.stage.prefix, $it.key)
 }
 
 if (-not $Test -and $due.Count -gt 0) {
