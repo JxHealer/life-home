@@ -1,0 +1,26 @@
+{
+    "title":  "中華郵政 × 寶可夢 聯名周邊預購（i集郵）",
+    "subject":  "郵局寶可夢聯名",
+    "category":  "shop",
+    "status":  "verified",
+    "tickets":  [
+                    {
+                        "label":  "i集郵 聯名周邊預購",
+                        "note":  "需先註冊會員",
+                        "start":  "2026-11-04T08:30:00+08:00",
+                        "url":  "https://stamp.post.gov.tw/"
+                    },
+                    {
+                        "label":  "首日封等周邊郵品發售",
+                        "note":  "08:30 為依新規定推算",
+                        "start":  "2026-11-18T08:30:00+08:00",
+                        "url":  "https://stamp.post.gov.tw/"
+                    },
+                    {
+                        "label":  "寶可夢郵票小全張發行",
+                        "note":  "08:30 為依新規定推算",
+                        "start":  "2026-11-20T08:30:00+08:00",
+                        "url":  "https://stamp.post.gov.tw/"
+                    }
+                ]
+}
