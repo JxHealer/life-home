@@ -1,0 +1,48 @@
+# 球賽：每天早上 07:00（台灣時間）從官網更新 TPBL / PLG / TPVL 賽程，
+# 再把「今天的比賽＋昨天的比分」發到 Discord #球賽。GitHub 的排程常會晚一點才跑。
+name: 球賽日報
+
+on:
+  schedule:
+    - cron: "0 23 * * *"    # UTC 23:00 = 台灣 07:00
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "發一則測試通知（今天沒比賽就列下一個有比賽的日子）"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sports
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 從官網更新賽程
+        shell: pwsh
+        continue-on-error: true
+        run: ./scripts/build-schedules.ps1
+
+      - name: 存下最新賽程
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/schedules
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "更新球賽賽程"
+          git pull --rebase -q && git push
+
+      - name: 發送今日賽程
+        shell: pwsh
+        env:
+          DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS }}
+        run: |
+          if ("${{ inputs.test }}" -eq "true") { ./scripts/sports-daily.ps1 -Test } else { ./scripts/sports-daily.ps1 }
