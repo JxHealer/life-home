@@ -1,615 +1,615 @@
 {
-    "league":  "plg",
-    "sport":  "basketball",
-    "name":  "P. LEAGUE+ 2026-27",
-    "sourceUrl":  "https://pleagueofficial.com/schedule-regular-season/2026-27",
-    "updatedAt":  "2026-11-06 10:46",
-    "games":  [
-                  {
-                      "id":  "plg-723",
-                      "code":  "G02",
-                      "stage":  "例行賽",
-                      "start":  "2026-10-25T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "final",
-                      "as":  105,
-                      "hs":  79
-                  },
-                  {
-                      "id":  "plg-724",
-                      "code":  "G03",
-                      "stage":  "例行賽",
-                      "start":  "2026-10-31T17:00:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "國立成功大學",
-                      "status":  "final",
-                      "as":  94,
-                      "hs":  115
-                  },
-                  {
-                      "id":  "plg-725",
-                      "code":  "G04",
-                      "stage":  "例行賽",
-                      "start":  "2026-11-01T17:00:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "方舟",
-                      "venue":  "國立成功大學",
-                      "status":  "final",
-                      "as":  99,
-                      "hs":  104
-                  },
-                  {
-                      "id":  "plg-726",
-                      "code":  "G05",
-                      "stage":  "例行賽",
-                      "start":  "2026-11-14T17:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-727",
-                      "code":  "G06",
-                      "stage":  "例行賽",
-                      "start":  "2026-11-15T17:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-728",
-                      "code":  "G07",
-                      "stage":  "例行賽",
-                      "start":  "2026-11-21T17:00:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "國立成功大學",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-729",
-                      "code":  "G08",
-                      "stage":  "例行賽",
-                      "start":  "2026-11-22T17:00:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "國立成功大學",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-730",
-                      "code":  "G09",
-                      "stage":  "例行賽",
-                      "start":  "2026-11-28T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "方舟",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-731",
-                      "code":  "G10",
-                      "stage":  "例行賽",
-                      "start":  "2026-11-29T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-732",
-                      "code":  "G11",
-                      "stage":  "例行賽",
-                      "start":  "2026-12-02T19:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-752",
-                      "code":  "G31",
-                      "stage":  "例行賽",
-                      "start":  "2026-12-06T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "新竹市立體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-733",
-                      "code":  "G12",
-                      "stage":  "例行賽",
-                      "start":  "2026-12-12T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "新竹市立體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-734",
-                      "code":  "G13",
-                      "stage":  "例行賽",
-                      "start":  "2026-12-13T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "新竹市立體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-735",
-                      "code":  "G14",
-                      "stage":  "例行賽",
-                      "start":  "2026-12-16T19:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "方舟",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-736",
-                      "code":  "G15",
-                      "stage":  "例行賽",
-                      "start":  "2026-12-19T17:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-737",
-                      "code":  "G16",
-                      "stage":  "例行賽",
-                      "start":  "2026-12-20T17:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-738",
-                      "code":  "G17",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-02T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "新竹市立體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-739",
-                      "code":  "G18",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-03T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "新竹市立體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-740",
-                      "code":  "G19",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-09T14:30:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "高雄市鳳山體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-741",
-                      "code":  "G20",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-09T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "方舟",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-742",
-                      "code":  "G21",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-10T14:30:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "方舟",
-                      "venue":  "高雄市鳳山體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-743",
-                      "code":  "G22",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-10T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-722",
-                      "code":  "G01",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-13T19:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-744",
-                      "code":  "G23",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-16T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "新竹市立體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-745",
-                      "code":  "G24",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-17T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "新竹市立體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-746",
-                      "code":  "G25",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-23T17:00:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "高雄市鳳山體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-747",
-                      "code":  "G26",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-24T17:00:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "方舟",
-                      "venue":  "高雄市鳳山體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-748",
-                      "code":  "G27",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-30T17:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-749",
-                      "code":  "G28",
-                      "stage":  "例行賽",
-                      "start":  "2027-01-31T17:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "方舟",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-750",
-                      "code":  "G29",
-                      "stage":  "例行賽",
-                      "start":  "2027-02-13T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "新竹市立體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-751",
-                      "code":  "G30",
-                      "stage":  "例行賽",
-                      "start":  "2027-02-14T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "新竹市立體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-753",
-                      "code":  "G32",
-                      "stage":  "例行賽",
-                      "start":  "2027-02-17T19:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-754",
-                      "code":  "G33",
-                      "stage":  "例行賽",
-                      "start":  "2027-02-19T19:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "方舟",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-755",
-                      "code":  "G34",
-                      "stage":  "例行賽",
-                      "start":  "2027-02-20T14:30:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "高雄市鳳山體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-756",
-                      "code":  "G35",
-                      "stage":  "例行賽",
-                      "start":  "2027-02-21T14:30:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "方舟",
-                      "venue":  "高雄市鳳山體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-757",
-                      "code":  "G36",
-                      "stage":  "例行賽",
-                      "start":  "2027-02-21T17:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-758",
-                      "code":  "G37",
-                      "stage":  "例行賽",
-                      "start":  "2027-02-24T19:00:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "高雄市鳳山體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-759",
-                      "code":  "G38",
-                      "stage":  "例行賽",
-                      "start":  "2027-02-27T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "方舟",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-760",
-                      "code":  "G39",
-                      "stage":  "例行賽",
-                      "start":  "2027-02-28T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-761",
-                      "code":  "G40",
-                      "stage":  "例行賽",
-                      "start":  "2027-03-06T14:30:00+08:00",
-                      "home":  "方舟",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "苗栗巨蛋體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-762",
-                      "code":  "G41",
-                      "stage":  "例行賽",
-                      "start":  "2027-03-06T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-763",
-                      "code":  "G42",
-                      "stage":  "例行賽",
-                      "start":  "2027-03-07T14:30:00+08:00",
-                      "home":  "方舟",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "苗栗巨蛋體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-764",
-                      "code":  "G43",
-                      "stage":  "例行賽",
-                      "start":  "2027-03-07T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-765",
-                      "code":  "G44",
-                      "stage":  "例行賽",
-                      "start":  "2027-03-13T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "新竹市立體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-766",
-                      "code":  "G45",
-                      "stage":  "例行賽",
-                      "start":  "2027-03-14T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "新竹市立體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-767",
-                      "code":  "G46",
-                      "stage":  "例行賽",
-                      "start":  "2027-03-19T19:00:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "方舟",
-                      "venue":  "高雄市鳳山體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-768",
-                      "code":  "G47",
-                      "stage":  "例行賽",
-                      "start":  "2027-03-20T17:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-769",
-                      "code":  "G48",
-                      "stage":  "例行賽",
-                      "start":  "2027-03-21T14:30:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "高雄市鳳山體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-770",
-                      "code":  "G49",
-                      "stage":  "例行賽",
-                      "start":  "2027-03-21T17:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "方舟",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-771",
-                      "code":  "G50",
-                      "stage":  "例行賽",
-                      "start":  "2027-04-03T17:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-772",
-                      "code":  "G51",
-                      "stage":  "例行賽",
-                      "start":  "2027-04-04T17:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-773",
-                      "code":  "G52",
-                      "stage":  "例行賽",
-                      "start":  "2027-04-07T19:00:00+08:00",
-                      "home":  "臺北富邦勇士",
-                      "away":  "方舟",
-                      "venue":  "臺北和平籃球館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-774",
-                      "code":  "G53",
-                      "stage":  "例行賽",
-                      "start":  "2027-04-10T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "苗栗巨蛋體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-775",
-                      "code":  "G54",
-                      "stage":  "例行賽",
-                      "start":  "2027-04-11T17:00:00+08:00",
-                      "home":  "方舟",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "苗栗巨蛋體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-776",
-                      "code":  "G55",
-                      "stage":  "例行賽",
-                      "start":  "2027-04-17T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-777",
-                      "code":  "G56",
-                      "stage":  "例行賽",
-                      "start":  "2027-04-18T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "方舟",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-778",
-                      "code":  "G57",
-                      "stage":  "例行賽",
-                      "start":  "2027-04-24T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "方舟",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-779",
-                      "code":  "G58",
-                      "stage":  "例行賽",
-                      "start":  "2027-04-25T17:00:00+08:00",
-                      "home":  "桃園璞園領航猿",
-                      "away":  "台鋼獵鷹",
-                      "venue":  "桃園市立綜合體育館",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-780",
-                      "code":  "G59",
-                      "stage":  "例行賽",
-                      "start":  "2027-05-01T17:00:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "臺北富邦勇士",
-                      "venue":  "國立成功大學",
-                      "status":  "scheduled"
-                  },
-                  {
-                      "id":  "plg-781",
-                      "code":  "G60",
-                      "stage":  "例行賽",
-                      "start":  "2027-05-02T17:00:00+08:00",
-                      "home":  "台鋼獵鷹",
-                      "away":  "桃園璞園領航猿",
-                      "venue":  "國立成功大學",
-                      "status":  "scheduled"
-                  }
-              ]
+  "league": "plg",
+  "sport": "basketball",
+  "name": "P. LEAGUE+ 2026-27",
+  "sourceUrl": "https://pleagueofficial.com/schedule-regular-season/2026-27",
+  "updatedAt": "2026-11-06 10:52",
+  "games": [
+    {
+      "id": "plg-723",
+      "code": "G02",
+      "stage": "例行賽",
+      "start": "2026-10-25T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "台鋼獵鷹",
+      "venue": "桃園市立綜合體育館",
+      "status": "final",
+      "as": 105,
+      "hs": 79
+    },
+    {
+      "id": "plg-724",
+      "code": "G03",
+      "stage": "例行賽",
+      "start": "2026-10-31T17:00:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "桃園璞園領航猿",
+      "venue": "國立成功大學",
+      "status": "final",
+      "as": 94,
+      "hs": 115
+    },
+    {
+      "id": "plg-725",
+      "code": "G04",
+      "stage": "例行賽",
+      "start": "2026-11-01T17:00:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "方舟",
+      "venue": "國立成功大學",
+      "status": "final",
+      "as": 99,
+      "hs": 104
+    },
+    {
+      "id": "plg-726",
+      "code": "G05",
+      "stage": "例行賽",
+      "start": "2026-11-14T17:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "台鋼獵鷹",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-727",
+      "code": "G06",
+      "stage": "例行賽",
+      "start": "2026-11-15T17:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "桃園璞園領航猿",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-728",
+      "code": "G07",
+      "stage": "例行賽",
+      "start": "2026-11-21T17:00:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "臺北富邦勇士",
+      "venue": "國立成功大學",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-729",
+      "code": "G08",
+      "stage": "例行賽",
+      "start": "2026-11-22T17:00:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "桃園璞園領航猿",
+      "venue": "國立成功大學",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-730",
+      "code": "G09",
+      "stage": "例行賽",
+      "start": "2026-11-28T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "方舟",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-731",
+      "code": "G10",
+      "stage": "例行賽",
+      "start": "2026-11-29T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "台鋼獵鷹",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-732",
+      "code": "G11",
+      "stage": "例行賽",
+      "start": "2026-12-02T19:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "臺北富邦勇士",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-752",
+      "code": "G31",
+      "stage": "例行賽",
+      "start": "2026-12-06T17:00:00+08:00",
+      "home": "方舟",
+      "away": "桃園璞園領航猿",
+      "venue": "新竹市立體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-733",
+      "code": "G12",
+      "stage": "例行賽",
+      "start": "2026-12-12T17:00:00+08:00",
+      "home": "方舟",
+      "away": "台鋼獵鷹",
+      "venue": "新竹市立體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-734",
+      "code": "G13",
+      "stage": "例行賽",
+      "start": "2026-12-13T17:00:00+08:00",
+      "home": "方舟",
+      "away": "桃園璞園領航猿",
+      "venue": "新竹市立體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-735",
+      "code": "G14",
+      "stage": "例行賽",
+      "start": "2026-12-16T19:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "方舟",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-736",
+      "code": "G15",
+      "stage": "例行賽",
+      "start": "2026-12-19T17:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "桃園璞園領航猿",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-737",
+      "code": "G16",
+      "stage": "例行賽",
+      "start": "2026-12-20T17:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "台鋼獵鷹",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-738",
+      "code": "G17",
+      "stage": "例行賽",
+      "start": "2027-01-02T17:00:00+08:00",
+      "home": "方舟",
+      "away": "臺北富邦勇士",
+      "venue": "新竹市立體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-739",
+      "code": "G18",
+      "stage": "例行賽",
+      "start": "2027-01-03T17:00:00+08:00",
+      "home": "方舟",
+      "away": "台鋼獵鷹",
+      "venue": "新竹市立體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-740",
+      "code": "G19",
+      "stage": "例行賽",
+      "start": "2027-01-09T14:30:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "臺北富邦勇士",
+      "venue": "高雄市鳳山體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-741",
+      "code": "G20",
+      "stage": "例行賽",
+      "start": "2027-01-09T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "方舟",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-742",
+      "code": "G21",
+      "stage": "例行賽",
+      "start": "2027-01-10T14:30:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "方舟",
+      "venue": "高雄市鳳山體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-743",
+      "code": "G22",
+      "stage": "例行賽",
+      "start": "2027-01-10T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "臺北富邦勇士",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-722",
+      "code": "G01",
+      "stage": "例行賽",
+      "start": "2027-01-13T19:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "臺北富邦勇士",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-744",
+      "code": "G23",
+      "stage": "例行賽",
+      "start": "2027-01-16T17:00:00+08:00",
+      "home": "方舟",
+      "away": "桃園璞園領航猿",
+      "venue": "新竹市立體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-745",
+      "code": "G24",
+      "stage": "例行賽",
+      "start": "2027-01-17T17:00:00+08:00",
+      "home": "方舟",
+      "away": "臺北富邦勇士",
+      "venue": "新竹市立體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-746",
+      "code": "G25",
+      "stage": "例行賽",
+      "start": "2027-01-23T17:00:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "臺北富邦勇士",
+      "venue": "高雄市鳳山體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-747",
+      "code": "G26",
+      "stage": "例行賽",
+      "start": "2027-01-24T17:00:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "方舟",
+      "venue": "高雄市鳳山體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-748",
+      "code": "G27",
+      "stage": "例行賽",
+      "start": "2027-01-30T17:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "台鋼獵鷹",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-749",
+      "code": "G28",
+      "stage": "例行賽",
+      "start": "2027-01-31T17:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "方舟",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-750",
+      "code": "G29",
+      "stage": "例行賽",
+      "start": "2027-02-13T17:00:00+08:00",
+      "home": "方舟",
+      "away": "桃園璞園領航猿",
+      "venue": "新竹市立體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-751",
+      "code": "G30",
+      "stage": "例行賽",
+      "start": "2027-02-14T17:00:00+08:00",
+      "home": "方舟",
+      "away": "臺北富邦勇士",
+      "venue": "新竹市立體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-753",
+      "code": "G32",
+      "stage": "例行賽",
+      "start": "2027-02-17T19:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "台鋼獵鷹",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-754",
+      "code": "G33",
+      "stage": "例行賽",
+      "start": "2027-02-19T19:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "方舟",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-755",
+      "code": "G34",
+      "stage": "例行賽",
+      "start": "2027-02-20T14:30:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "桃園璞園領航猿",
+      "venue": "高雄市鳳山體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-756",
+      "code": "G35",
+      "stage": "例行賽",
+      "start": "2027-02-21T14:30:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "方舟",
+      "venue": "高雄市鳳山體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-757",
+      "code": "G36",
+      "stage": "例行賽",
+      "start": "2027-02-21T17:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "桃園璞園領航猿",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-758",
+      "code": "G37",
+      "stage": "例行賽",
+      "start": "2027-02-24T19:00:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "臺北富邦勇士",
+      "venue": "高雄市鳳山體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-759",
+      "code": "G38",
+      "stage": "例行賽",
+      "start": "2027-02-27T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "方舟",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-760",
+      "code": "G39",
+      "stage": "例行賽",
+      "start": "2027-02-28T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "台鋼獵鷹",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-761",
+      "code": "G40",
+      "stage": "例行賽",
+      "start": "2027-03-06T14:30:00+08:00",
+      "home": "方舟",
+      "away": "臺北富邦勇士",
+      "venue": "苗栗巨蛋體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-762",
+      "code": "G41",
+      "stage": "例行賽",
+      "start": "2027-03-06T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "台鋼獵鷹",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-763",
+      "code": "G42",
+      "stage": "例行賽",
+      "start": "2027-03-07T14:30:00+08:00",
+      "home": "方舟",
+      "away": "台鋼獵鷹",
+      "venue": "苗栗巨蛋體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-764",
+      "code": "G43",
+      "stage": "例行賽",
+      "start": "2027-03-07T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "臺北富邦勇士",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-765",
+      "code": "G44",
+      "stage": "例行賽",
+      "start": "2027-03-13T17:00:00+08:00",
+      "home": "方舟",
+      "away": "台鋼獵鷹",
+      "venue": "新竹市立體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-766",
+      "code": "G45",
+      "stage": "例行賽",
+      "start": "2027-03-14T17:00:00+08:00",
+      "home": "方舟",
+      "away": "臺北富邦勇士",
+      "venue": "新竹市立體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-767",
+      "code": "G46",
+      "stage": "例行賽",
+      "start": "2027-03-19T19:00:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "方舟",
+      "venue": "高雄市鳳山體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-768",
+      "code": "G47",
+      "stage": "例行賽",
+      "start": "2027-03-20T17:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "桃園璞園領航猿",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-769",
+      "code": "G48",
+      "stage": "例行賽",
+      "start": "2027-03-21T14:30:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "桃園璞園領航猿",
+      "venue": "高雄市鳳山體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-770",
+      "code": "G49",
+      "stage": "例行賽",
+      "start": "2027-03-21T17:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "方舟",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-771",
+      "code": "G50",
+      "stage": "例行賽",
+      "start": "2027-04-03T17:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "桃園璞園領航猿",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-772",
+      "code": "G51",
+      "stage": "例行賽",
+      "start": "2027-04-04T17:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "台鋼獵鷹",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-773",
+      "code": "G52",
+      "stage": "例行賽",
+      "start": "2027-04-07T19:00:00+08:00",
+      "home": "臺北富邦勇士",
+      "away": "方舟",
+      "venue": "臺北和平籃球館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-774",
+      "code": "G53",
+      "stage": "例行賽",
+      "start": "2027-04-10T17:00:00+08:00",
+      "home": "方舟",
+      "away": "台鋼獵鷹",
+      "venue": "苗栗巨蛋體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-775",
+      "code": "G54",
+      "stage": "例行賽",
+      "start": "2027-04-11T17:00:00+08:00",
+      "home": "方舟",
+      "away": "桃園璞園領航猿",
+      "venue": "苗栗巨蛋體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-776",
+      "code": "G55",
+      "stage": "例行賽",
+      "start": "2027-04-17T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "臺北富邦勇士",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-777",
+      "code": "G56",
+      "stage": "例行賽",
+      "start": "2027-04-18T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "方舟",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-778",
+      "code": "G57",
+      "stage": "例行賽",
+      "start": "2027-04-24T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "方舟",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-779",
+      "code": "G58",
+      "stage": "例行賽",
+      "start": "2027-04-25T17:00:00+08:00",
+      "home": "桃園璞園領航猿",
+      "away": "台鋼獵鷹",
+      "venue": "桃園市立綜合體育館",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-780",
+      "code": "G59",
+      "stage": "例行賽",
+      "start": "2027-05-01T17:00:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "臺北富邦勇士",
+      "venue": "國立成功大學",
+      "status": "scheduled"
+    },
+    {
+      "id": "plg-781",
+      "code": "G60",
+      "stage": "例行賽",
+      "start": "2027-05-02T17:00:00+08:00",
+      "home": "台鋼獵鷹",
+      "away": "桃園璞園領航猿",
+      "venue": "國立成功大學",
+      "status": "scheduled"
+    }
+  ]
 }
