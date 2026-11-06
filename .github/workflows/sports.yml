@@ -5,6 +5,9 @@ name: 球賽日報
 on:
   schedule:
     - cron: "0 23 * * *"    # UTC 23:00 = 台灣 07:00
+  push:                     # 改了這個排程檔就自動發一則測試通知
+    branches: [main]
+    paths: [".github/workflows/sports.yml", "scripts/sports-daily.ps1"]
   workflow_dispatch:
     inputs:
       test:
@@ -45,4 +48,4 @@ jobs:
         env:
           DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS }}
         run: |
-          if ("${{ inputs.test }}" -eq "true") { ./scripts/sports-daily.ps1 -Test } else { ./scripts/sports-daily.ps1 }
+          if ("${{ inputs.test }}" -eq "true" -or "${{ github.event_name }}" -eq "push") { ./scripts/sports-daily.ps1 -Test } else { ./scripts/sports-daily.ps1 }
