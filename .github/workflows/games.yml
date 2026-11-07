@@ -1,0 +1,33 @@
+# 遊戲日報：每天早上 07:30（台灣時間）把今天進行中的 Pokémon GO / Pikmin Bloom 活動和截止時間
+# 發到 Discord。活動資料 data/games.json 由電腦上的 sync-events-github.ps1 更新。GitHub 的排程常會晚一點才跑。
+name: 遊戲日報
+
+on:
+  schedule:
+    - cron: "30 23 * * *"   # UTC 23:30 = 台灣 07:30
+  push:                     # 改了這個排程檔就自動發一則測試通知
+    branches: [main]
+    paths: [".github/workflows/games.yml", "scripts/games-daily.ps1"]
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "發一則測試通知"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 發送今日遊戲活動
+        shell: pwsh
+        env:
+          DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS }}
+        run: |
+          if ("${{ inputs.test }}" -eq "true" -or "${{ github.event_name }}" -eq "push") { ./scripts/games-daily.ps1 -Test } else { ./scripts/games-daily.ps1 }
