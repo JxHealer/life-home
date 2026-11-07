@@ -3,7 +3,7 @@
   "sport": "basketball",
   "name": "TPBL 2026-27",
   "sourceUrl": "https://tpbl.basketball/schedule",
-  "updatedAt": "2026-11-07 07:26",
+  "updatedAt": "2026-11-08 07:23",
   "games": [
     {
       "id": "tpbl-27542",
@@ -117,7 +117,9 @@
       "home": "臺北台新戰神",
       "away": "福爾摩沙夢想家",
       "venue": "和平籃球館",
-      "status": "scheduled",
+      "status": "final",
+      "hs": 103,
+      "as": 90,
       "ticket": "https://reurl.cc/NOolYe"
     },
     {
