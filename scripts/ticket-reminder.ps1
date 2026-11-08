@@ -43,12 +43,13 @@ if ($Test) {
     $next = $items.Values | Where-Object { $_.start -gt $now } | Sort-Object { $_.start } | Select-Object -First 1
     if ($next) { $due += @{ item = $next; stage = $Stages[0] } }
 } else {
-    # 每一筆只發「目前所在的那一段」：剩 60～120 分鐘發 2 小時提醒，剩 60 分鐘內發 1 小時提醒
+    # 每一筆只發「目前所在的那一段」：剩 90～150 分鐘發 2 小時提醒，剩 90 分鐘內發 1 小時提醒
+    # （GitHub 實際約 45–75 分鐘才檢查一次，所以範圍放寬，寧可早一點收到）
     # 1 小時提醒的紀錄沿用原本的 key，2 小時提醒在前面加 "2h|"（清理舊紀錄時看的是最後一段的時間）
     foreach ($it in $items.Values) {
         $left = ($it.start - $now).TotalMinutes
         if ($left -le 0) { continue }
-        $stage = if ($left -le 60) { $Stages[1] } elseif ($left -le 120) { $Stages[0] } else { $null }
+        $stage = if ($left -le 90) { $Stages[1] } elseif ($left -le 150) { $Stages[0] } else { $null }
         if ($stage -and ($stage.prefix + $it.key) -notin $sent) { $due += @{ item = $it; stage = $stage } }
     }
 }

@@ -1,10 +1,10 @@
-# 球賽：每天早上 07:00（台灣時間）從官網更新 TPBL / PLG / TPVL 賽程，
+# 球賽：每天早上 06:00（台灣時間）從官網更新 TPBL / PLG / TPVL 賽程，
 # 再把「今天的比賽＋昨天的比分」發到 Discord #球賽。GitHub 的排程常會晚一點才跑。
 name: 球賽日報
 
 on:
   schedule:
-    - cron: "0 23 * * *"    # UTC 23:00 = 台灣 07:00
+    - cron: "0 22 * * *"    # UTC 22:00 = 台灣 06:00（GitHub 常晚到，所以提早排）
   push:                     # 改了這個排程檔就自動發一則測試通知
     branches: [main]
     paths: [".github/workflows/sports.yml", "scripts/sports-daily.ps1"]

@@ -14,6 +14,22 @@ $Week = "日", "一", "二", "三", "四", "五", "六"
 $UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 $nowTw = [DateTimeOffset]::UtcNow.ToOffset([TimeSpan]::FromHours(8))
 $todayKey = $nowTw.ToString("yyyyMMdd")
+$SentPath = Join-Path $PSScriptRoot "../data/finance-sent.json"
+
+# 開盤報告一天排兩次（GitHub 常晚到），只發第一則；09:05 前就等一下，太早就略過交給下一次
+if ($Mode -eq "open" -and -not $Test) {
+    if ((Test-Path $SentPath) -and ((Get-Content $SentPath -Raw | ConvertFrom-Json).open -eq $todayKey)) { Write-Host "今天的開盤報告已經發過了"; exit 0 }
+    $openAt = [DateTimeOffset]::new($nowTw.Year, $nowTw.Month, $nowTw.Day, 9, 5, 0, [TimeSpan]::FromHours(8))
+    $wait = ($openAt - $nowTw).TotalMinutes
+    if ($wait -gt 20) { Write-Host "還沒開盤（還有 $([math]::Round($wait)) 分鐘），交給下一次排程"; exit 0 }
+    if ($wait -gt 0) { Write-Host "等到 09:05 再抓價格"; Start-Sleep -Seconds ([int]($wait * 60)); $nowTw = [DateTimeOffset]::UtcNow.ToOffset([TimeSpan]::FromHours(8)) }
+}
+# 收盤報告：13:33 前先等一下，讓證交所的收盤價出來
+if ($Mode -eq "close" -and -not $Test) {
+    $closeAt = [DateTimeOffset]::new($nowTw.Year, $nowTw.Month, $nowTw.Day, 13, 33, 0, [TimeSpan]::FromHours(8))
+    $wait = ($closeAt - $nowTw).TotalMinutes
+    if ($wait -gt 0 -and $wait -le 20) { Start-Sleep -Seconds ([int]($wait * 60)); $nowTw = [DateTimeOffset]::UtcNow.ToOffset([TimeSpan]::FromHours(8)) }
+}
 
 # 台股慣例：漲紅、跌綠
 function Format-Change([double]$change, [double]$prev, [int]$digits = 2) {
@@ -84,3 +100,6 @@ Send-Discord -Channel finance -Color $color `
     -Description "$note`n$summary`n資料來源：臺灣證券交易所、Yahoo 財經" `
     -Fields $fields
 Write-Host "已送出金融日報（$dateText $what）"
+if ($Mode -eq "open" -and -not $Test) {
+    [System.IO.File]::WriteAllText($SentPath, (@{ open = $todayKey } | ConvertTo-Json), (New-Object System.Text.UTF8Encoding($false)))
+}

@@ -1,11 +1,13 @@
 # 股票日報：平日開盤後、收盤後各發一次 Discord #金融日報
-# 時間是 UTC（台灣時間 -8 小時）。GitHub 的排程常會晚 5–20 分鐘才跑。
+# 時間是 UTC（台灣時間 -8 小時）。GitHub 的排程常會晚 15–60 分鐘才跑，所以提早排。
+# 開盤排兩次（08:10、09:00）：程式會等到 09:05 之後才抓價格，而且一天只發一則。
 name: 股票日報
 
 on:
   schedule:
-    - cron: "10 1 * * 1-5"    # 台灣 09:10 開盤後
-    - cron: "40 5 * * 1-5"    # 台灣 13:40 收盤後
+    - cron: "10 0 * * 1-5"    # 台灣 08:10（開盤報告，第一次）
+    - cron: "0 1 * * 1-5"     # 台灣 09:00（開盤報告，備用）
+    - cron: "35 5 * * 1-5"    # 台灣 13:35 收盤後
   workflow_dispatch:
     inputs:
       mode:
@@ -18,10 +20,17 @@ on:
         type: boolean
         default: true
 
+permissions:
+  contents: write
+
+concurrency:
+  group: finance
+  cancel-in-progress: false
+
 jobs:
   report:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -30,5 +39,15 @@ jobs:
         env:
           DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS }}
         run: |
-          $mode = if ("${{ github.event_name }}" -eq "workflow_dispatch") { "${{ inputs.mode }}" } elseif ("${{ github.event.schedule }}" -eq "10 1 * * 1-5") { "open" } else { "close" }
+          $sched = "${{ github.event.schedule }}"
+          $mode = if ("${{ github.event_name }}" -eq "workflow_dispatch") { "${{ inputs.mode }}" } elseif ($sched -in "10 0 * * 1-5", "0 1 * * 1-5") { "open" } else { "close" }
           if ("${{ inputs.test }}" -eq "true") { ./scripts/finance-report.ps1 -Mode $mode -Test } else { ./scripts/finance-report.ps1 -Mode $mode }
+
+      - name: 記錄今天已發開盤報告
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/finance-sent.json 2>/dev/null || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "記錄已發送的開盤報告"
+          git pull --rebase -q && git push
