@@ -3,7 +3,7 @@
   "sport": "volleyball",
   "name": "TPVL 2026-27",
   "sourceUrl": "https://tpvl.tw/schedule",
-  "updatedAt": "2026-11-08 11:45",
+  "updatedAt": "2026-11-09 06:35",
   "games": [
     {
       "id": "tpvl-2026-27-g1",
@@ -117,7 +117,9 @@
       "home": "桃園雲豹飛將",
       "away": "新竹可利工程師",
       "venue": "中原大學體育館",
-      "status": "scheduled",
+      "status": "final",
+      "hs": 3,
+      "as": 1,
       "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/MABvAE4ALwBxAEkAcQB3ADkAawB0AHUASgBlAGwAZwA3AGkAOQBsAEwARwA0AE8AWQBmAFQANgBKAFUARABWAGUAMwBsAEcAcQBRAEsAQgB3ADMAYwA9AA2"
     },
     {
@@ -128,7 +130,9 @@
       "home": "臺中連莊",
       "away": "臺北伊斯特",
       "venue": "國立臺灣體育運動大學體育館",
-      "status": "scheduled",
+      "status": "final",
+      "hs": 3,
+      "as": 0,
       "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/MABNAE8AbwBqAG0AQgAvADMAWQB3AHYAawAyAGEARQB2AFcARQB3AGEAUwBvAHMATgBoAHgAagBTAFYARgBLAFEAZwB4ADEASABMAGsAagB5ACsAUQA9AA2"
     },
     {
