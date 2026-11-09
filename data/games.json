@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-11-09T06:06:19.6404397+08:00",
+    "updatedAt":  "2026-11-09T13:20:34.7467671+08:00",
     "events":  [
                    {
                        "id":  "pogo-go-wild-area-sendai-2026",
@@ -158,18 +158,6 @@
                        "highlight":  "免費！信義 A11 現場簽到領限時調查＋明信片"
                    },
                    {
-                       "id":  "pikmin-cd-geranium-2026-11",
-                       "title":  "Pikmin Bloom 11 月社群日：天竺葵",
-                       "category":  "pikmin",
-                       "status":  "verified",
-                       "region":  "global",
-                       "start":  "2026-11-14T00:00:00+08:00",
-                       "end":  "2026-11-15T23:59:00+08:00",
-                       "allDay":  true,
-                       "tzName":  null,
-                       "highlight":  "種天竺葵｜走 10,000 步拿徽章"
-                   },
-                   {
                        "id":  "pogo-run30-newtaipei-2026",
                        "title":  "⭐ Pokémon RUN 30 新北場（台灣・現場限定）",
                        "category":  "pogo",
@@ -180,6 +168,18 @@
                        "allDay":  true,
                        "tzName":  null,
                        "highlight":  "🇹🇼 台灣場！免費：異色未知圖騰 N／R／U＋2 個限時調查"
+                   },
+                   {
+                       "id":  "pikmin-cd-geranium-2026-11",
+                       "title":  "Pikmin Bloom 11 月社群日：天竺葵",
+                       "category":  "pikmin",
+                       "status":  "verified",
+                       "region":  "global",
+                       "start":  "2026-11-14T00:00:00+08:00",
+                       "end":  "2026-11-15T23:59:00+08:00",
+                       "allDay":  true,
+                       "tzName":  null,
+                       "highlight":  "種天竺葵｜走 10,000 步拿徽章"
                    },
                    {
                        "id":  "pogo-gmax-machamp-research-2026",
@@ -420,6 +420,18 @@
                        "allDay":  false,
                        "tzName":  null,
                        "highlight":  "免費版就有固拉多相遇＋400 寶可幣"
+                   },
+                   {
+                       "id":  "pikmin-familymart-taiwan-2026",
+                       "title":  "Pikmin Bloom 五週年 × 全家便利商店",
+                       "category":  "pikmin",
+                       "status":  "verified",
+                       "region":  "taiwan",
+                       "start":  "2026-11-10T00:00:00+08:00",
+                       "end":  "2026-12-07T23:59:00+08:00",
+                       "allDay":  true,
+                       "tzName":  null,
+                       "highlight":  "到全家門市下滑特殊地點：五週年零食金色花苗＋明信片｜同一地點每 7 天 1 次"
                    },
                    {
                        "id":  "pogo-pc-bangkok-opening-2026",
