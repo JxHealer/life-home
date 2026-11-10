@@ -1,102 +1,6 @@
 {
-    "updatedAt":  "2026-11-09T13:20:34.7467671+08:00",
+    "updatedAt":  "2026-11-10T14:39:06.7389502+08:00",
     "events":  [
-                   {
-                       "id":  "pogo-go-wild-area-sendai-2026",
-                       "title":  "GO Wild Area：仙台・東北（現場限定）",
-                       "category":  "pogo",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-11-06T10:00:00+09:00",
-                       "end":  "2026-11-08T18:00:00+09:00",
-                       "allDay":  false,
-                       "tzName":  "仙台",
-                       "highlight":  "全宮城縣都能玩｜現場中心：躑躅崗公園（榛岡公園）"
-                   },
-                   {
-                       "id":  "pogo-festival-of-lights-2026",
-                       "title":  "燈光節 Festival of Lights（印度限定）",
-                       "category":  "pogo",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-11-06T10:00:00+05:30",
-                       "end":  "2026-11-08T20:00:00+05:30",
-                       "allDay":  false,
-                       "tzName":  "印度",
-                       "highlight":  "紗麗皮卡丘、庫爾塔皮卡丘回歸，都可能異色＋特殊背卡（台灣時間 11/6 12:30～11/8 22:30）"
-                   },
-                   {
-                       "id":  "pogo-stamp-rally-sendai-2026",
-                       "title":  "曠野地帶集章：仙台（乘龍背卡）",
-                       "category":  "pogo",
-                       "status":  "pending",
-                       "region":  "overseas",
-                       "start":  "2026-11-06T10:00:00+09:00",
-                       "end":  "2026-11-08T20:00:00+09:00",
-                       "allDay":  false,
-                       "tzName":  "仙台",
-                       "highlight":  "乘龍集章背卡｜網友說無期限、免費（官方未證實）"
-                   },
-                   {
-                       "id":  "pogo-stamp-rally-cdmx-2026",
-                       "title":  "曠野地帶集章：墨西哥城（摔角鷹人背卡）",
-                       "category":  "pogo",
-                       "status":  "pending",
-                       "region":  "overseas",
-                       "start":  "2026-11-06T10:00:00-06:00",
-                       "end":  "2026-11-08T20:00:00-06:00",
-                       "allDay":  false,
-                       "tzName":  "墨西哥城",
-                       "highlight":  "摔角鷹人集章背卡｜網友說無期限、免費（官方未證實）"
-                   },
-                   {
-                       "id":  "pikmin-lotte-cheongnyangni-2026",
-                       "title":  "樂天百貨清涼里店 皮克敏活動",
-                       "category":  "pikmin",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-10-23T10:30:00+09:00",
-                       "end":  "2026-11-08T20:30:00+09:00",
-                       "allDay":  false,
-                       "tzName":  "首爾",
-                       "highlight":  "金色花苗（紅色照片鈕扣徽章）＋明信片｜11/8 結束"
-                   },
-                   {
-                       "id":  "pogo-pokexciting-singapore-2026",
-                       "title":  "PokeXciting! 新加坡 30 週年（現場限定）",
-                       "category":  "pogo",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-11-07T10:00:00+08:00",
-                       "end":  "2026-11-08T22:00:00+08:00",
-                       "allDay":  false,
-                       "tzName":  "新加坡",
-                       "highlight":  null
-                   },
-                   {
-                       "id":  "pogo-run30-singapore-2026",
-                       "title":  "Pokémon RUN 30 新加坡場（現場限定）",
-                       "category":  "pogo",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-11-07T00:00:00+08:00",
-                       "end":  "2026-11-08T23:59:00+08:00",
-                       "allDay":  true,
-                       "tzName":  "新加坡",
-                       "highlight":  "免費！異色未知圖騰 N／R／U＋2 個限時調查（共 3 萬多 XP、特級對戰入場券）"
-                   },
-                   {
-                       "id":  "pogo-go-wild-area-cdmx-2026",
-                       "title":  "GO Wild Area：墨西哥城（現場限定）",
-                       "category":  "pogo",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-11-06T00:00:00-06:00",
-                       "end":  "2026-11-08T23:59:00-06:00",
-                       "allDay":  true,
-                       "tzName":  "墨西哥城",
-                       "highlight":  null
-                   },
                    {
                        "id":  "pogo-night-out-london-2026",
                        "title":  "Pokémon Night Out 倫敦場（現場限定）",
@@ -192,6 +96,18 @@
                        "allDay":  false,
                        "tzName":  null,
                        "highlight":  "免費拿超極巨化怪力相遇＋腕力糖果／糖果 XL＋極巨粒子"
+                   },
+                   {
+                       "id":  "pikmin-5th-party-walk-2026",
+                       "title":  "五週年慶典 Party Walk（紅黃藍分隊）",
+                       "category":  "pikmin",
+                       "status":  "verified",
+                       "region":  "global",
+                       "start":  "2026-11-12T23:00:00+08:00",
+                       "end":  "2026-11-16T22:59:00+08:00",
+                       "allDay":  false,
+                       "tzName":  null,
+                       "highlight":  "隨機分紅黃藍隊一起走｜結束後拿五週年回憶卡片"
                    },
                    {
                        "id":  "pogo-dynamax-spotlight-2026-11-19",
