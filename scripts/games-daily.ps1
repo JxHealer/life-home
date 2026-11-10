@@ -26,7 +26,7 @@ $cats = [ordered]@{
 $regions = [ordered]@{
     global   = "🏠 在家就能玩（全球）"
     taiwan   = "🇹🇼 台灣現場"
-    overseas = "🌏 海外現場（要人在當地）"
+    overseas = "🌏 海外活動"
 }
 
 # 資料太久沒更新就提醒
