@@ -3,7 +3,7 @@
   "sport": "basketball",
   "name": "TPBL 2026-27",
   "sourceUrl": "https://tpbl.basketball/schedule",
-  "updatedAt": "2026-11-14 06:40",
+  "updatedAt": "2026-11-15 06:35",
   "games": [
     {
       "id": "tpbl-27542",
@@ -143,7 +143,9 @@
       "home": "桃園台啤永豐雲豹",
       "away": "新竹御嵿攻城獅",
       "venue": "桃園巨蛋",
-      "status": "scheduled",
+      "status": "final",
+      "hs": 100,
+      "as": 95,
       "ticket": "https://leopards.kktix.cc/events/ce41b16e"
     },
     {
@@ -154,7 +156,9 @@
       "home": "新北中信特攻",
       "away": "高雄全家海神",
       "venue": "新莊體育館",
-      "status": "scheduled",
+      "status": "final",
+      "hs": 104,
+      "as": 106,
       "ticket": "https://tix.ctbcsports.com/DEA/UTK0101_"
     },
     {
