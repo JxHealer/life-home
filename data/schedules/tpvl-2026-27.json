@@ -3,7 +3,7 @@
   "sport": "volleyball",
   "name": "TPVL 2026-27",
   "sourceUrl": "https://tpvl.tw/schedule",
-  "updatedAt": "2026-11-15 06:35",
+  "updatedAt": "2026-11-16 06:36",
   "games": [
     {
       "id": "tpvl-2026-27-g1",
@@ -169,7 +169,9 @@
       "home": "桃園雲豹飛將",
       "away": "新竹可利工程師",
       "venue": "中原大學體育館",
-      "status": "scheduled",
+      "status": "final",
+      "hs": 3,
+      "as": 1,
       "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/MABvAE4ALwBxAEkAcQB3ADkAawB0AHUASgBlAGwAZwA3AGkAOQBsAEwARwA0AE8AWQBmAFQANgBKAFUARABWAGUAMwBsAEcAcQBRAEsAQgB3ADMAYwA9AA2"
     },
     {
@@ -180,7 +182,9 @@
       "home": "台鋼天鷹",
       "away": "臺中連莊",
       "venue": "高雄市鳳山體育館",
-      "status": "scheduled",
+      "status": "final",
+      "hs": 3,
+      "as": 0,
       "ticket": "https://ticket-tsgskyhawks.tsgsports.tw/buyTicket?activityId=AC_260818MD3564&eventSessionId=TSGSKYHAWKS_2627_REG_G16&activityType=1&step=select-area"
     },
     {
