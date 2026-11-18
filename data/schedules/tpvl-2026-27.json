@@ -3,7 +3,7 @@
   "sport": "volleyball",
   "name": "TPVL 2026-27",
   "sourceUrl": "https://tpvl.tw/schedule",
-  "updatedAt": "2026-11-18 06:51",
+  "updatedAt": "2026-11-19 06:50",
   "games": [
     {
       "id": "tpvl-2026-27-g1",
@@ -327,7 +327,8 @@
       "home": "新竹可利工程師",
       "away": "桃園雲豹飛將",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g30",
@@ -348,7 +349,8 @@
       "home": "新竹可利工程師",
       "away": "臺北伊斯特",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g32",
@@ -369,7 +371,8 @@
       "home": "新竹可利工程師",
       "away": "台鋼天鷹",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g34",
@@ -390,7 +393,8 @@
       "home": "新竹可利工程師",
       "away": "臺北伊斯特",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g36",
@@ -422,7 +426,8 @@
       "home": "新竹可利工程師",
       "away": "台鋼天鷹",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g39",
@@ -443,7 +448,8 @@
       "home": "新竹可利工程師",
       "away": "臺北伊斯特",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g41",
@@ -508,7 +514,8 @@
       "home": "新竹可利工程師",
       "away": "臺中連莊",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g47",
@@ -529,7 +536,8 @@
       "home": "新竹可利工程師",
       "away": "桃園雲豹飛將",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g49",
@@ -623,7 +631,8 @@
       "home": "新竹可利工程師",
       "away": "台鋼天鷹",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g58",
@@ -644,7 +653,8 @@
       "home": "新竹可利工程師",
       "away": "臺中連莊",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g60",
@@ -675,7 +685,8 @@
       "home": "新竹可利工程師",
       "away": "桃園雲豹飛將",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g63",
@@ -695,7 +706,8 @@
       "home": "新竹可利工程師",
       "away": "臺北伊斯特",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g65",
@@ -716,7 +728,8 @@
       "home": "新竹可利工程師",
       "away": "臺中連莊",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g67",
@@ -737,7 +750,8 @@
       "home": "新竹可利工程師",
       "away": "桃園雲豹飛將",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g69",
@@ -791,7 +805,8 @@
       "home": "新竹可利工程師",
       "away": "臺中連莊",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g74",
@@ -812,7 +827,8 @@
       "home": "新竹可利工程師",
       "away": "台鋼天鷹",
       "venue": "新竹市立體育館",
-      "status": "scheduled"
+      "status": "scheduled",
+      "ticket": "https://www.famiticket.com.tw/Home/Activity/Info/RQA3AHUAbwBwAEgANwBzAFIAQQA1AGEAbABEADgAcABqAGMAbwBaAC8ATwBTAEYAVgB6AHMAWAB6AG4AQQA0AFEAQQArAEgAUwB6AEoATABiAGcAYwA9AA2"
     },
     {
       "id": "tpvl-2026-27-g76",
