@@ -3,7 +3,7 @@
   "sport": "basketball",
   "name": "P. LEAGUE+ 2026-27",
   "sourceUrl": "https://pleagueofficial.com/schedule-regular-season/2026-27",
-  "updatedAt": "2026-11-21 06:44",
+  "updatedAt": "2026-11-22 06:38",
   "games": [
     {
       "id": "plg-723",
@@ -73,7 +73,9 @@
       "home": "台鋼獵鷹",
       "away": "臺北富邦勇士",
       "venue": "國立成功大學",
-      "status": "scheduled"
+      "status": "final",
+      "as": 104,
+      "hs": 85
     },
     {
       "id": "plg-729",
