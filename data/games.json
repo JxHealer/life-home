@@ -1,138 +1,6 @@
 {
-    "updatedAt":  "2026-11-17T12:24:55.5085213+08:00",
+    "updatedAt":  "2026-11-24T11:11:22.7472842+08:00",
     "events":  [
-                   {
-                       "id":  "pikmin-5th-party-walk-2026",
-                       "title":  "五週年慶典 Party Walk（紅黃藍分隊）",
-                       "category":  "pikmin",
-                       "status":  "verified",
-                       "region":  "global",
-                       "start":  "2026-11-12T23:00:00+08:00",
-                       "end":  "2026-11-16T22:59:00+08:00",
-                       "allDay":  false,
-                       "tzName":  null,
-                       "highlight":  "隨機分紅黃藍隊一起走｜結束後拿五週年回憶卡片"
-                   },
-                   {
-                       "id":  "pogo-dynamax-spotlight-2026-11-19",
-                       "title":  "聚焦時刻：極巨敲音猴、炎兔兒、淚眼蜥",
-                       "category":  "pogo",
-                       "status":  "verified",
-                       "region":  "global",
-                       "start":  "2026-11-19T18:00:00+08:00",
-                       "end":  "2026-11-19T19:00:00+08:00",
-                       "allDay":  false,
-                       "tzName":  null,
-                       "highlight":  "極巨化敲音猴、炎兔兒、淚眼蜥｜糖果 2 倍"
-                   },
-                   {
-                       "id":  "pogo-minior-leonids-2026",
-                       "title":  "流星雨：獅子座（小隕星）",
-                       "category":  "pogo",
-                       "status":  "verified",
-                       "region":  "global",
-                       "start":  "2026-11-14T17:00:00+08:00",
-                       "end":  "2026-11-19T23:59:00+08:00",
-                       "allDay":  false,
-                       "tzName":  null,
-                       "highlight":  null
-                   },
-                   {
-                       "id":  "pogo-eternamax-2026-11-21",
-                       "title":  "無極巨化無極汰那 襲來",
-                       "category":  "pogo",
-                       "status":  "verified",
-                       "region":  "global",
-                       "start":  "2026-11-21T11:00:00+08:00",
-                       "end":  "2026-11-21T14:00:00+08:00",
-                       "allDay":  false,
-                       "tzName":  null,
-                       "highlight":  "打贏拿大量無極汰那糖果（不能抓）"
-                   },
-                   {
-                       "id":  "pogo-cd-pawniard-2026",
-                       "title":  "11 月社群日：駒刀小兵（Pawniard）",
-                       "category":  "pogo",
-                       "status":  "verified",
-                       "region":  "global",
-                       "start":  "2026-11-21T14:00:00+08:00",
-                       "end":  "2026-11-21T17:00:00+08:00",
-                       "allDay":  false,
-                       "tzName":  null,
-                       "highlight":  "駒刀小兵 ✨＋特殊背卡｜進化仆刀將軍學特別招式"
-                   },
-                   {
-                       "id":  "pikmin-dutch-comic-con-2026",
-                       "title":  "2026 荷蘭 Heroes Dutch Comic Con Nintendo 攤位（現場限定）",
-                       "category":  "pikmin",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-11-21T10:00:00+01:00",
-                       "end":  "2026-11-22T18:00:00+01:00",
-                       "allDay":  false,
-                       "tzName":  "荷蘭",
-                       "highlight":  "Nintendo 攤位特殊地點送金色花苗：紅色照片鈕扣徽章飾品皮克敏"
-                   },
-                   {
-                       "id":  "pikmin-journey-kobe-2026",
-                       "title":  "Pikmin Bloom Journey 2026 in 神戶（現場付費活動）",
-                       "category":  "pikmin",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-11-21T09:00:00+09:00",
-                       "end":  "2026-11-22T18:00:00+09:00",
-                       "allDay":  false,
-                       "tzName":  "神戶",
-                       "highlight":  null
-                   },
-                   {
-                       "id":  "pikmin-lotte-jamsil-2026",
-                       "title":  "樂天世界百貨（蠶室）皮克敏活動",
-                       "category":  "pikmin",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-11-13T10:30:00+09:00",
-                       "end":  "2026-11-22T20:30:00+09:00",
-                       "allDay":  false,
-                       "tzName":  "首爾",
-                       "highlight":  null
-                   },
-                   {
-                       "id":  "pikmin-autumn-harvest-hk-2026",
-                       "title":  "皮克敏秋季收穫祭（香港朗豪坊）",
-                       "category":  "pikmin",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-11-10T17:00:00+08:00",
-                       "end":  "2026-11-22T22:00:00+08:00",
-                       "allDay":  false,
-                       "tzName":  "香港",
-                       "highlight":  "現場特殊地點：紅色照片鈕扣徽章金色花苗＋走 1,000 步拿限定明信片"
-                   },
-                   {
-                       "id":  "pikmin-coco-taiwan-2026",
-                       "title":  "Pikmin Bloom × CoCo都可：咖啡杯飾品皮克敏",
-                       "category":  "pikmin",
-                       "status":  "verified",
-                       "region":  "taiwan",
-                       "start":  "2026-11-05T00:00:00+08:00",
-                       "end":  "2026-11-22T23:59:00+08:00",
-                       "allDay":  true,
-                       "tzName":  null,
-                       "highlight":  "到 CoCo 門市拿金色花苗：咖啡杯飾品皮克敏（8 款）"
-                   },
-                   {
-                       "id":  "pogo-run30-malaysia-2026",
-                       "title":  "Pokémon RUN 30 馬來西亞場（現場限定）",
-                       "category":  "pogo",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-11-21T00:00:00+08:00",
-                       "end":  "2026-11-22T23:59:00+08:00",
-                       "allDay":  true,
-                       "tzName":  "吉隆坡",
-                       "highlight":  "免費！異色未知圖騰 N／R／U＋2 個限時調查"
-                   },
                    {
                        "id":  "pogo-wild-area-lead-out-2026",
                        "title":  "巨大足跡（無極汰那回歸）",
@@ -182,6 +50,18 @@
                        "highlight":  "✅ 台灣可參加！一起走路拿活動限定明信片"
                    },
                    {
+                       "id":  "pikmin-kobe-preview-mushroom-2026",
+                       "title":  "大型節慶蘑菇搶先試玩（免費）",
+                       "category":  "pikmin",
+                       "status":  "verified",
+                       "region":  "global",
+                       "start":  "2026-11-25T09:00:00+09:00",
+                       "end":  "2026-11-26T23:59:00+09:00",
+                       "allDay":  false,
+                       "tzName":  "日本",
+                       "highlight":  "免費！所有人都能打的大型節慶蘑菇，沒有人數上限"
+                   },
+                   {
                        "id":  "pogo-clefable-smrd-2026",
                        "title":  "皮可西 極致超級團體戰日",
                        "category":  "pogo",
@@ -192,6 +72,18 @@
                        "allDay":  false,
                        "tzName":  null,
                        "highlight":  "首次：超級皮可西 ✨，可升到「超級頂尖級」並學會「月亮之力＋」"
+                   },
+                   {
+                       "id":  "pikmin-kobe-party-walk-2026",
+                       "title":  "步步通神戶！官方 Party Walk",
+                       "category":  "pikmin",
+                       "status":  "verified",
+                       "region":  "global",
+                       "start":  "2026-11-26T09:00:00+08:00",
+                       "end":  "2026-11-29T22:59:00+08:00",
+                       "allDay":  false,
+                       "tzName":  null,
+                       "highlight":  "報名送 30 片藍色繡球花花瓣"
                    },
                    {
                        "id":  "pikmin-challenge-anywhere-kobe-2026",
@@ -230,6 +122,18 @@
                        "highlight":  "新：五週年玩具珠寶飾品皮克敏（8 款）｜回歸：繁花禮盒、杯子蛋糕"
                    },
                    {
+                       "id":  "pikmin-5th-community-week-2026",
+                       "title":  "五週年紀念社群週",
+                       "category":  "pikmin",
+                       "status":  "verified",
+                       "region":  "global",
+                       "start":  "2026-11-21T00:00:00+08:00",
+                       "end":  "2026-11-30T23:59:00+08:00",
+                       "allDay":  false,
+                       "tzName":  null,
+                       "highlight":  "補拿 5–10 月種花徽章｜走 30,000 步拿五週年徽章｜全收集挑戰金色棒球外套"
+                   },
+                   {
                        "id":  "pogo-go-pass-nov-2026",
                        "title":  "GO Pass：11 月",
                        "category":  "pogo",
@@ -254,18 +158,6 @@
                        "highlight":  "12/5（六）極巨對戰日，主角與時間尚未公布"
                    },
                    {
-                       "id":  "pikmin-5th-snack-2026",
-                       "title":  "五週年紀念零食飾品皮克敏（任務活動）",
-                       "category":  "pikmin",
-                       "status":  "verified",
-                       "region":  "overseas",
-                       "start":  "2026-11-10T00:00:00+08:00",
-                       "end":  "2026-12-07T23:59:00+08:00",
-                       "allDay":  false,
-                       "tzName":  null,
-                       "highlight":  "完成 50 個任務拿金色花苗，長出 7 款五週年零食飾品皮克敏（台灣改到全家特殊地點拿）"
-                   },
-                   {
                        "id":  "pikmin-familymart-taiwan-2026",
                        "title":  "Pikmin Bloom 五週年 × 全家便利商店",
                        "category":  "pikmin",
@@ -276,6 +168,18 @@
                        "allDay":  true,
                        "tzName":  null,
                        "highlight":  "到全家門市下滑特殊地點：五週年零食金色花苗＋明信片｜同一地點每 7 天 1 次"
+                   },
+                   {
+                       "id":  "pikmin-5th-snack-2026",
+                       "title":  "五週年紀念零食飾品皮克敏（任務活動）",
+                       "category":  "pikmin",
+                       "status":  "verified",
+                       "region":  "overseas",
+                       "start":  "2026-11-10T00:00:00+08:00",
+                       "end":  "2026-12-07T23:59:00+08:00",
+                       "allDay":  false,
+                       "tzName":  null,
+                       "highlight":  "完成 50 個任務拿金色花苗，長出 7 款五週年零食飾品皮克敏（台灣改到全家特殊地點拿）"
                    },
                    {
                        "id":  "pogo-pc-bangkok-opening-2026",
