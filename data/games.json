@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-11-24T20:17:32.8657194+08:00",
+    "updatedAt":  "2026-11-25T07:40:37.4670345+08:00",
     "events":  [
                    {
                        "id":  "pikmin-nintendo-ny-2026",
@@ -146,6 +146,18 @@
                        "highlight":  "12/5（六）極巨對戰日，主角與時間尚未公布"
                    },
                    {
+                       "id":  "pogo-tropical-paradise-2026",
+                       "title":  "熱帶樂園 Tropical Paradise",
+                       "category":  "pogo",
+                       "status":  "unverified",
+                       "region":  "global",
+                       "start":  "2026-12-01T10:00:00+08:00",
+                       "end":  "2026-12-07T20:00:00+08:00",
+                       "allDay":  false,
+                       "tzName":  null,
+                       "highlight":  "細節還沒公布"
+                   },
+                   {
                        "id":  "pikmin-5th-snack-2026",
                        "title":  "五週年紀念零食飾品皮克敏（任務活動）",
                        "category":  "pikmin",
@@ -278,6 +290,30 @@
                        "highlight":  "藍色超級瑪利歐鑰匙圈飾品＋明信片｜12/1 起另加紅色照片鈕扣徽章"
                    },
                    {
+                       "id":  "pogo-winter-holiday-2026",
+                       "title":  "冬日佳節 2026",
+                       "category":  "pogo",
+                       "status":  "unverified",
+                       "region":  "global",
+                       "start":  "2026-12-22T10:00:00+08:00",
+                       "end":  "2026-12-28T20:00:00+08:00",
+                       "allDay":  false,
+                       "tzName":  null,
+                       "highlight":  "細節還沒公布"
+                   },
+                   {
+                       "id":  "pogo-december-schedule-2026",
+                       "title":  "12 月團戰／聚焦時刻／極巨排程",
+                       "category":  "pogo",
+                       "status":  "unverified",
+                       "region":  "global",
+                       "start":  "2026-12-01T00:00:00+08:00",
+                       "end":  "2026-12-31T23:59:00+08:00",
+                       "allDay":  true,
+                       "tzName":  null,
+                       "highlight":  "傳說：雷吉鐸拉戈→？→鳳王→洛奇亞→靈獸三雲｜暗影帝牙盧卡"
+                   },
+                   {
                        "id":  "pikmin-walkanytime-oceanexpo-2026",
                        "title":  "漫步各地迷你活動：沖繩 海洋博公園（現場限定・免費）",
                        "category":  "pikmin",
@@ -300,6 +336,18 @@
                        "allDay":  false,
                        "tzName":  "香港",
                        "highlight":  "免費！到場領限時調查＋10 週年明信片｜11/14–15 曠野地帶現場活動"
+                   },
+                   {
+                       "id":  "pogo-new-year-2027",
+                       "title":  "2027 新年活動",
+                       "category":  "pogo",
+                       "status":  "unverified",
+                       "region":  "global",
+                       "start":  "2026-12-29T10:00:00+08:00",
+                       "end":  "2027-01-04T20:00:00+08:00",
+                       "allDay":  false,
+                       "tzName":  null,
+                       "highlight":  "細節還沒公布"
                    },
                    {
                        "id":  "pikmin-lafayette-paris-2026",
