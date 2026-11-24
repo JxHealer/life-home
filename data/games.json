@@ -1,18 +1,6 @@
 {
-    "updatedAt":  "2026-11-24T11:11:22.7472842+08:00",
+    "updatedAt":  "2026-11-24T20:17:32.8657194+08:00",
     "events":  [
-                   {
-                       "id":  "pogo-wild-area-lead-out-2026",
-                       "title":  "巨大足跡（無極汰那回歸）",
-                       "category":  "pogo",
-                       "status":  "verified",
-                       "region":  "global",
-                       "start":  "2026-11-16T10:00:00+08:00",
-                       "end":  "2026-11-23T20:00:00+08:00",
-                       "allDay":  false,
-                       "tzName":  null,
-                       "highlight":  "免費 GO Pass 就能抓到無極汰那（每人 1 隻）"
-                   },
                    {
                        "id":  "pikmin-nintendo-ny-2026",
                        "title":  "Nintendo 紐約店 地點挑戰：皮克敏 4 宇宙船飾品（現場限定）",
@@ -158,18 +146,6 @@
                        "highlight":  "12/5（六）極巨對戰日，主角與時間尚未公布"
                    },
                    {
-                       "id":  "pikmin-familymart-taiwan-2026",
-                       "title":  "Pikmin Bloom 五週年 × 全家便利商店",
-                       "category":  "pikmin",
-                       "status":  "verified",
-                       "region":  "taiwan",
-                       "start":  "2026-11-10T00:00:00+08:00",
-                       "end":  "2026-12-07T23:59:00+08:00",
-                       "allDay":  true,
-                       "tzName":  null,
-                       "highlight":  "到全家門市下滑特殊地點：五週年零食金色花苗＋明信片｜同一地點每 7 天 1 次"
-                   },
-                   {
                        "id":  "pikmin-5th-snack-2026",
                        "title":  "五週年紀念零食飾品皮克敏（任務活動）",
                        "category":  "pikmin",
@@ -180,6 +156,18 @@
                        "allDay":  false,
                        "tzName":  null,
                        "highlight":  "完成 50 個任務拿金色花苗，長出 7 款五週年零食飾品皮克敏（台灣改到全家特殊地點拿）"
+                   },
+                   {
+                       "id":  "pikmin-familymart-taiwan-2026",
+                       "title":  "Pikmin Bloom 五週年 × 全家便利商店",
+                       "category":  "pikmin",
+                       "status":  "verified",
+                       "region":  "taiwan",
+                       "start":  "2026-11-10T00:00:00+08:00",
+                       "end":  "2026-12-07T23:59:00+08:00",
+                       "allDay":  true,
+                       "tzName":  null,
+                       "highlight":  "到全家門市下滑特殊地點：五週年零食金色花苗＋明信片｜同一地點每 7 天 1 次"
                    },
                    {
                        "id":  "pogo-pc-bangkok-opening-2026",

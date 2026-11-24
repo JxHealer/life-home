@@ -1,0 +1,18 @@
+{
+    "title":  "AKMU ASIA TOUR 2027《AKDONGDEUL》台北場（首站）",
+    "subject":  "AKMU",
+    "category":  "idol",
+    "status":  "verified",
+    "tickets":  [
+                    {
+                        "label":  "會員優先購（需先在 Weverse 登記）",
+                        "start":  "2026-12-05T11:00:00+08:00",
+                        "url":  "https://ticket.ibon.com.tw/"
+                    },
+                    {
+                        "label":  "正式販售",
+                        "start":  "2026-12-06T11:00:00+08:00",
+                        "url":  "https://ticket.ibon.com.tw/"
+                    }
+                ]
+}
