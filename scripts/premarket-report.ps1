@@ -78,7 +78,8 @@ $usList = @(
     @{ key = "GSPC"; sym = "^GSPC"; name = "S&P 500"; digits = 0 },
     @{ key = "NVDA"; sym = "NVDA"; name = "輝達 NVDA"; digits = 2 }
 )
-$us = @{}; $fields = @(); $up = 0; $down = 0; $usStale = $false; $usDate = $null
+$us = @{}; $fields = @(); $up = 0; $down = 0; $usUp = 0; $usDown = 0; $usStale = $false; $usDate = $null
+$nightChg = $null; $nightField = $null; $nikkeiField = $null
 foreach ($x in $usList) {
     try {
         $range = if ($x.key -eq "SOX") { "2y" } else { "1mo" }
@@ -88,7 +89,7 @@ foreach ($x in $usList) {
         $us[$x.key] = @{ chg = $chg; series = $s }
         $usDate = $last.d
         if ($last.d -lt $prevTwDay) { $usStale = $true }
-        if ($chg -gt 0) { $up++ } elseif ($chg -lt 0) { $down++ }
+        if ($chg -gt 0) { $up++; $usUp++ } elseif ($chg -lt 0) { $down++; $usDown++ }
         $fields += @{ name = $x.name; value = "**$($last.c.ToString('N' + $x.digits))**`n$(Format-Pct $chg)"; inline = $true }
     } catch { $fields += @{ name = $x.name; value = "取不到資料"; inline = $true } }
 }
@@ -98,7 +99,7 @@ try {
     $v = Get-Series "^VIX" -5 "1mo"
     $vix = $v[-1].c; $vChg = $vix / $v[-2].c - 1
     $level = if ($vix -ge 30) { "😱 恐慌（30 以上）" } elseif ($vix -ge 20) { "😟 偏緊張（20～30）" } else { "😌 平靜（20 以下）" }
-    if ($vChg -gt 0.03) { $down++ } elseif ($vChg -lt -0.03) { $up++ }
+    if ($vChg -gt 0.03) { $down++; $usDown++ } elseif ($vChg -lt -0.03) { $up++; $usUp++ }
     $fields += @{ name = "VIX 恐慌指數"; value = "**$($vix.ToString('0.00'))**（$(Pct $vChg)）`n$level`n⬆ 越高代表越恐慌"; inline = $true }
 } catch { $fields += @{ name = "VIX 恐慌指數"; value = "取不到資料"; inline = $true } }
 
@@ -111,11 +112,12 @@ try {
     if ($near) {
         $last = [double]$near.CLastPrice; $ref = [double]$near.CRefPrice
         $chg = $last / $ref - 1
+        $nightChg = $chg
         if ($chg -gt 0) { $up++ } elseif ($chg -lt 0) { $down++ }
-        $nightText = "**$($last.ToString('N0'))**（$(([double]$near.CDiff).ToString('+0;-0;0')) 點）`n$(Format-Pct $chg)`n和白天收盤比"
+        $nightText = "**$($last.ToString('N0'))**（$(([double]$near.CDiff).ToString('+0;-0;0')) 點）`n$(Format-Pct $chg)`n和白天收盤比，交易到清晨 05:00"
     }
 } catch {}
-$fields += @{ name = "🌙 台指期夜盤"; value = $nightText; inline = $true }
+$nightField = @{ name = "⭐ 🌙 台指期夜盤（最重要）"; value = $nightText; inline = $true }
 
 # ---------- 日經期貨（美國晚上也在交易） ----------
 try {
@@ -123,8 +125,10 @@ try {
     $m = $j.chart.result[0].meta
     $chg = [double]$m.regularMarketPrice / [double]$m.chartPreviousClose - 1
     if ($chg -gt 0) { $up++ } elseif ($chg -lt 0) { $down++ }
-    $fields += @{ name = "🇯🇵 日經期貨"; value = "**$(([double]$m.regularMarketPrice).ToString('N0'))**`n$(Format-Pct $chg)"; inline = $true }
-} catch { $fields += @{ name = "🇯🇵 日經期貨"; value = "取不到資料"; inline = $true } }
+    $nikkeiField = @{ name = "🇯🇵 日經期貨"; value = "**$(([double]$m.regularMarketPrice).ToString('N0'))**`n$(Format-Pct $chg)`n美股收盤後仍在交易"; inline = $true }
+} catch { $nikkeiField = @{ name = "🇯🇵 日經期貨"; value = "取不到資料"; inline = $true } }
+# 夜盤、日經期貨反映「美股收盤後」的新消息，排在最前面
+$fields = @($nightField, $nikkeiField) + $fields
 
 # ---------- 過去 2 年類似情況（以費城半導體分組） ----------
 $histText = "取不到資料"
@@ -161,6 +165,18 @@ $dir = if ($up -gt $down) { "偏多（往上）" } elseif ($down -gt $up) { "偏
 $color = if ($up -gt $down) { 0xD9363E } elseif ($down -gt $up) { 0x2F9E57 } else { 0x808080 }
 $strength = if ($total -gt 0 -and [math]::Max($up, $down) / $total -ge 0.8) { "大多數指標同方向，訊號比較一致" } elseif ($up -eq $down) { "指標互相矛盾，開盤方向較難判斷" } else { "指標有分歧，訊號較弱" }
 $summary = "🧭 **$($total) 個指標中：$up 個偏漲、$down 個偏跌 → $dir**`n$strength"
+if ($null -ne $nightChg) {
+    $nightDir = if ($nightChg -gt 0) { "偏漲" } elseif ($nightChg -lt 0) { "偏跌" } else { "持平" }
+    $usDir = if ($usUp -gt $usDown) { "偏漲" } elseif ($usDown -gt $usUp) { "偏跌" } else { "持平" }
+    $nightLine = "⭐ **夜盤 $(Pct $nightChg)（$nightDir）**：交易到清晨 05:00，是最接近開盤的參考"
+    if ($nightDir -ne "持平" -and $usDir -ne "持平" -and $nightDir -ne $usDir) {
+        $nightLine += "`n⚠️ **美股$($usDir)、夜盤卻$($nightDir)**：美股收盤後可能有新消息，開盤通常比較接近夜盤的方向"
+        $color = 0x808080
+    } elseif ($nightDir -eq $usDir) {
+        $nightLine += "`n✅ 美股和夜盤方向一致，訊號比較可靠"
+    }
+    $summary = "$nightLine`n`n$summary"
+}
 $staleNote = if ($usStale) { "`n⚠️ 昨晚美股休市，美股是較舊的資料（$($usDate.ToString('M/d'))），參考價值較低" } else { "" }
 
 $dateText = "{0:M/d}（{1}）" -f $nowTw, $Week[[int]$nowTw.DayOfWeek]
