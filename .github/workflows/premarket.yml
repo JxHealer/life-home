@@ -1,0 +1,45 @@
+# 開盤前參考：平日早上台股開盤前發一則 Discord #金融日報
+# 時間是 UTC（台灣時間 -8 小時）。GitHub 的排程常會晚 15–60 分鐘才跑，所以提早排兩次：
+# 台灣 06:30、07:30（美股 05:00 收盤、夜盤 05:00 結束之後）。一天只發一則，9 點後就不發。
+name: 開盤前參考
+
+on:
+  schedule:
+    - cron: "30 22 * * 0-4"   # 台灣 06:30（週一到週五）
+    - cron: "30 23 * * 0-4"   # 台灣 07:30（備用）
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "測試（休市、已發過也照樣發送）"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: premarket
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 發送開盤前參考
+        shell: pwsh
+        env:
+          DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS }}
+        run: |
+          if ("${{ inputs.test }}" -eq "true") { ./scripts/premarket-report.ps1 -Test } else { ./scripts/premarket-report.ps1 }
+
+      - name: 記錄今天已發送
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/premarket-sent.json 2>/dev/null || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "記錄已發送的開盤前參考"
+          git pull --rebase -q && git push
