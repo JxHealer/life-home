@@ -3,7 +3,7 @@
   "sport": "basketball",
   "name": "TPBL 2026-27",
   "sourceUrl": "https://tpbl.basketball/schedule",
-  "updatedAt": "2026-11-27 06:54",
+  "updatedAt": "2026-11-28 06:55",
   "games": [
     {
       "id": "tpbl-27542",
@@ -234,7 +234,9 @@
       "home": "福爾摩沙夢想家",
       "away": "桃園台啤永豐雲豹",
       "venue": "臺中洲際迷你蛋",
-      "status": "scheduled",
+      "status": "final",
+      "hs": 110,
+      "as": 107,
       "ticket": "https://ticket.ibon.com.tw/ActivityInfo/Details/39985"
     },
     {
